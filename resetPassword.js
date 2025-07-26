@@ -6,7 +6,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/wanderlust");
 (async () => {
   try {
     const userId = "6851433971d88fa2fbefea9e"; // your user ID
-    const newPassword = "MyNewSecurePassword123"; // your new password
+    
 
     const user = await User.findById(userId);
     if (!user) {
